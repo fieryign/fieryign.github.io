@@ -1,0 +1,674 @@
+body {
+  background: url(../images/Wallpaper.png) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Fonts Selection*/
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3vw;
+  line-height: 1.5;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.bio {
+  text-align: left;
+  padding: 5% 25% 20%;
+  font-size: 1.5vw;
+}
+
+.event-p {
+  text-align: center;
+  font-family: "ubuntu";
+  font-size: 1.5vw;
+}
+/* Fonts Selection*/
+
+/*Footer*/
+.footer {
+  padding: 15% 15% 7% 15%;
+  text-align: left;
+  font-size: 1vw;
+}
+
+#footer {
+  text-align: right;
+  padding: 15% 0 0 0;
+}
+
+.social-icons {
+  margin: 0 5% 0 0;
+}
+/*Footer*/
+
+/*Navbar*/
+.navbar-ticket {
+  background: cyan;
+}
+
+.navbar {
+  background-color: #393e46;
+  opacity: 80%;
+}
+/*Navbar*/
+
+/*countdownTimer*/
+.countdownTimer{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 5vw;
+  text-align: center;
+  padding-top: 10%;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+
+.bookNow{
+  margin: 3% 0 10% 4% ;
+}
+
+/*Mainpic and event pic*/
+.mainpic, .eventSlider{
+  height: 2%;
+  width: 70%;
+  margin-top: 100px;
+  border-radius: 25px;
+  margin: 15% auto 0 auto;
+  opacity:1;
+  transition: opacity 2s; 
+}
+
+#eventPicture{
+  height: 2%;
+  width: 70%;
+  margin: 15% 15% 0 15%;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#eventPicture:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 7%;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/*Responsiveness for mainpic image and footer*/
+@media (max-width: 991px) {
+
+  #footer {
+    text-align: left;
+  }
+}
+
+/*Partner Table*/
+.partner {
+  background-image: url(../images/partnerwallpaper.jpeg);
+  color: black;
+  margin: inherit;
+}
+
+.column {
+  width: 50% auto;
+  text-align: center;
+  padding: 2% 13%;
+}
+
+.column::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column img {
+  height: 250px;
+  width: 250px;
+}
+/*Partner Table*/
+
+/*Scroll to Top Button*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*Registration*/
+.forms-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7%;
+}
+
+.forms {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+
+.form-wrapper {
+	animation: hideLayer .3s ease-out forwards;
+}
+
+.form-wrapper.is-active {
+	animation: showLayer .3s ease-in forwards;
+}
+
+@keyframes showLayer {
+	50% {
+		z-index: 1;
+	}
+	100% {
+		z-index: 1;
+	}
+}
+
+@keyframes hideLayer {
+	0% {
+		z-index: 1;
+	}
+	49.999% {
+		z-index: 1;
+	}
+}
+
+.switcher {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: inherit;
+	font-size: 16px;
+	letter-spacing: .5px;
+	color: #999;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: translateX(0);
+	transition: all .3s ease-out;
+}
+
+.form-wrapper.is-active .switcher-login {
+	color: #fff;
+	transform: translateX(90px);
+}
+
+.form-wrapper.is-active .switcher-signup {
+	color: #fff;
+	transform: translateX(-90px);
+}
+
+.underline {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	overflow: hidden;
+	pointer-events: none;
+	width: 100%;
+	height: 2px;
+}
+
+.underline::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: inherit;
+	display: block;
+	width: inherit;
+	height: inherit;
+	background-color: currentColor;
+	transition: transform .2s ease-out;
+}
+
+.switcher-login .underline::before {
+	transform: translateX(101%);
+}
+
+.switcher-signup .underline::before {
+	transform: translateX(-101%);
+}
+
+.form-wrapper.is-active .underline::before {
+	transform: translateX(0%);
+}
+
+.form {
+	overflow: hidden;
+	min-width: 260px;
+	margin-top: 50px;
+	padding: 30px 25px;
+  border-radius: 5px;
+	transform-origin: top;
+}
+
+.form-login {
+	animation: hideLogin .3s ease-out forwards;
+}
+
+.form-wrapper.is-active .form-login {
+	animation: showLogin .3s ease-in forwards;
+}
+
+@keyframes showLogin {
+	0% {
+		background: #d7e7f1;
+		transform: translate(40%, 10px);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	100% {
+		background:url(../images/Signin.jpeg);
+		transform: translate(35%, -20px);
+	}
+}
+
+@keyframes hideLogin {
+	0% {
+		background-color: #fff;
+		transform: translate(35%, -20px);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	100% {
+		background: #d7e7f1;
+		transform: translate(40%, 10px);
+	}
+}
+
+.form-signup {
+	animation: hideSignup .3s ease-out forwards;
+}
+
+.form-wrapper.is-active .form-signup {
+	animation: showSignup .3s ease-in forwards;
+}
+
+@keyframes showSignup {
+	0% {
+		background: #d7e7f1;
+		transform: translate(-40%, 10px) scaleY(.8);
+	}
+	50% {
+		transform: translate(0, 0) scaleY(.8);
+	}
+	100% {
+		background:url(../images/Signin.jpeg);
+		transform: translate(-35%, -20px) scaleY(1);
+	}
+}
+
+@keyframes hideSignup {
+	0% {
+		background-color: #fff;
+		transform: translate(-35%, -20px) scaleY(1);
+	}
+	50% {
+		transform: translate(0, 0) scaleY(.8);
+	}
+	100% {
+		background: #d7e7f1;
+		transform: translate(-40%, 10px) scaleY(.8);
+	}
+}
+
+.form fieldset {
+	position: relative;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: all .3s ease-out;
+}
+
+.form-login fieldset {
+	transform: translateX(-50%);
+}
+
+.form-signup fieldset {
+	transform: translateX(50%);
+}
+
+.form-wrapper.is-active fieldset {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity .4s ease-in, transform .35s ease-in;
+}
+
+.form legend {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+}
+
+.input-block {
+	margin-bottom: 20px;
+}
+
+.input-block label {
+	font-size: 14px;
+  color: white
+}
+
+.input-block input {
+	display: block;
+	width: 100%;
+	margin-top: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #3b4465;
+  background: #eef9fe;
+  border: 1px solid #cddbef;
+  border-radius: 2px;
+}
+
+.form [type='submit'] {
+	opacity: 0;
+	display: block;
+	min-width: 120px;
+	margin: 30px auto 10px;
+	font-size: 18px;
+	line-height: 40px;
+	border-radius: 25px;
+	border: none;
+	transition: all .3s ease-out;
+}
+
+.form-wrapper.is-active .form [type='submit'] {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all .4s ease-in;
+}
+
+.btn-login {
+	color: #fbfdff;
+	background: #a7e245;
+	transform: translateX(-30%);
+}
+
+.btn-signup {
+	color: #a7e245;
+	background: #fbfdff;
+	box-shadow: inset 0 0 0 2px #a7e245;
+	transform: translateX(30%);
+}
+
+/*Card Flip*/
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	padding: initial;
+  }
+  
+  /* to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-card-front {
+	background:url(../images/ticketFlipCard.jpeg);
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+  }
+
+  .cardText{
+     padding-top:10%; /* center the top of child elements vetically */
+  }
+
+  .cardDiv{
+	  margin: 10% 0 0 3%;
+  }
+
+  /*Sponsor Slide in*/
+  .js-slidein {
+	opacity: 0;
+	transform: translateY(100px);
+	-webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+  }
+  
+  .js-slidein-visible {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
+  }
+
+/*Movie Seats*/
+.screen {
+    padding: 6px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+}
+
+.table>.fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+}
+
+.td th,.td td {
+    width: 31px;
+	background-color: white;
+}
+
+.tdBox {
+    display: inline-block; 
+    width: 26px;
+    height: 23px;
+    padding: 1px 3px; 
+    border: 4px double white;
+    background-color:black;
+    opacity: 0.4;
+}
+
+.spanBox {
+    display: inline-block; 
+    width: 28px;
+    height: 23px;
+    padding: 1px 3px; 
+    border: 4px double white;
+    background-color:#ddd;
+    margin-top: 2%;
+}
+
+.seatsBtn {
+    margin-top: 1%;
+	width: 20%;
+}
+
+.input {
+    /* width: 30%; */
+    position: relative;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.greenColor{
+    background-color: #5cb85c;
+}
+
+.redColor{
+    background-color: #d9534f;
+}
+
+.resultTable{
+	background-color: white;
+	text-align: center;
+}
+
+.resultTable td:nth-child(3){
+    max-width:100%;
+    word-break: break-all;
+}
+
+.SeatReserv{
+	padding-top: 10%;
+}
